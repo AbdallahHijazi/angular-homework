@@ -1,0 +1,59 @@
+<form>
+    <div class="styl">
+      <input [(ngModel)]="word" (ngModelChange)="reset()" name="wordInput" placeholder="Enter the  search text" />
+      <button (click)="searchWord()">Search</button>
+  
+      <hr />
+  
+      <tabset id="test">
+        <tab heading="Meanings">
+          @if (meanings.length > 0) {
+          <li *ngFor="let meaning of meanings">
+            {{ meaning.definitions[0]?.definition }}
+          </li>
+          }
+          @else {
+          <p>Enter the word you want to know the meaning of</p>
+          }
+        </tab>
+  
+        <tab heading="Synonyms">
+          <ul>
+            @if (synonyms.length > 0) {
+            <li *ngFor="let synonym of synonyms">
+              {{ synonym }}
+            </li>
+            }
+            @else {
+            <p>Enter the word you want to know the meaning of</p>
+            }
+          </ul>
+        </tab>
+  
+        <tab heading="Definitions">
+          <ul>
+            @if (definitions.length > 0) {
+            <li *ngFor="let definition of definitions">
+              {{ definition }}
+            </li>
+            }
+            @else {
+            <p>Enter the word you want to know the meaning of</p>
+            }
+          </ul>
+        </tab>
+  
+        <tab heading="Audio">
+          @if (audio) {
+          <audio controls>
+            <source [src]="audio" type="audio/mpeg">
+          </audio>
+          }
+          @else {
+          <p>Enter the word you want to know the meaning of</p>
+          }
+        </tab>
+        
+      </tabset>
+    </div>
+  </form>

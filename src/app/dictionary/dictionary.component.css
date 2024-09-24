@@ -1,0 +1,36 @@
+form {
+    margin: 250px ;
+    width: 1000px;
+    height: 500px;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: rgb(211, 211, 223);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  }
+
+  input{
+    border-radius: 5px;
+  }
+ 
+  .styl{
+
+    margin:0 ;  
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  button{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 100px;
+    border-radius: 5px;
+    border: 0.3px dashed;
+    background-color: rgb(126, 126, 129);
+    box-shadow: 0 4px #999;
+  }
+
+  p{
+    margin: 2%;
+    margin-left: 10px;
+  }
