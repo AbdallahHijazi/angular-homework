@@ -27,6 +27,8 @@
               }
             ],
             "styles": [
+              "node_modules/ngx-bootstrap/tabs/tabs.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -92,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c083f3dc-32ac-4dc2-8ad8-c77aa0ce1161"
   }
 }
